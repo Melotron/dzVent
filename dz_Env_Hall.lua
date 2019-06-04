@@ -1,5 +1,7 @@
 return { 
-            on =        {   timer = { "every 1 minutes" } },
+        on = { timer = { "every 1 minutes" }
+               devices = { 65, 3 }
+        },
 
     execute = function(domoticz)
 
