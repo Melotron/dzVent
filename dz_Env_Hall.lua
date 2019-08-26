@@ -1,6 +1,6 @@
 return { 
         on = { timer = { "every 1 minutes" }
-               devices = { 65, 3 }
+               devices = { 71, 3 }
         },
 
     execute = function(domoticz)
