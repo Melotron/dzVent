@@ -3,7 +3,7 @@
 ---------------------------------------------
 
 return { 
-	       on = { devices = { 2, 78 } 
+	       on = { devices = { 2 } 
        },
 
     execute = function(domoticz)
