@@ -1,15 +1,22 @@
 -----------------------------------
 -- Night Light for LED stripe -----
 -----------------------------------
-
+--
+-- Devices that activates this script
+--
+--  3 - Virt_SLEEP
+-- 58 - PIR Storarum
+-- 59 - PIR Hall
+-- 60 - PIR Kök
+--
 	
 return {
-	on = { devices = { 59, 58, 60, 2 } },
+	on = { devices = { 59, 58, 60, 3 } },
 
     execute = function(domoticz)
 	
 	     if domoticz.devices(71).state     == "On"     and                     -- iDetect - Anyone
-	        domoticz.devices(2).state      == "On"     and                     --  23 = Virt_SLEEP
+	        domoticz.devices(3).state      == "On"     and                     --  23 = Virt_SLEEP
 	        domoticz.devices(1).state      == "Off"    then                    --  78 = Virt_Morning
 
             if domoticz.devices(59).state          == "On"     or             -- Pir: Hall
@@ -24,7 +31,7 @@ return {
 	     end end
         	
 	     if domoticz.devices(71).state     == "On"     and                     -- iDetect - Anyone
-	        domoticz.devices(2).state      == "On"     and                     --  23 = Virt_SLEEP
+	        domoticz.devices(3).state      == "On"     and                     --  23 = Virt_SLEEP
 	        domoticz.devices(1).state      == "Off"    then                    --  78 = Virt_Morning
 
             if  domoticz.devices(59).state          == "On"     or             -- Pir: Hall
