@@ -21,7 +21,7 @@ return {
         if  domoticz.devices(73).state    == "On"     then --  Presence detection Magnus
             
 --          Laddare
-            domoticz.devices(34).switchOn                  --  Laddare i Sovrum
+            domoticz.devices(34).switchOn()                --  Laddare i Sovrum
 
         end 
 
