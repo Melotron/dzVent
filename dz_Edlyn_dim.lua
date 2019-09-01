@@ -3,8 +3,8 @@
 -------------------------------------------------
 --
 -- It will dim up the light over the course of 
--- 3 minutes and 15 seconds with the initial start.
--- It dims up 1 procent every 3rd sec.
+-- little over 2 minutes with the initial start.
+-- It dims up 1 procent every 2nd sec.
 --
 -- And after that it will return to my normal
 -- enviromental settings that runs every 1 minute.
