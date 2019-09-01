@@ -1,22 +1,19 @@
 return {
 	active = true,
-	on = {
-		devices = {
-			'WAKEUP LIGHT',
-		}
-	},
+	on = { devices = { 76 } },
+	
 	execute = function(domoticz, device)
-		local licht = domoticz.devices('Slaapkamer')
-		local WK = domoticz.devices('WAKEUP LIGHT')
+		local tak = domoticz.devices(26)
+		-- local WK = domoticz.devices('WAKEUP LIGHT')
 		if (device.state == 'On') then
 		    -- domoticz.devices('Lamp bank links').switchOn().forSec(2).repeatAfterSec(1, 3)
-		    licht.switchOn()
-		    licht.dimTo(1)
+		    tak.switchOn()
+		    tak.dimTo(1)
 		    
-		    for i = 1,100 do
-		        t = i * 18
-				licht.dimTo(i).afterSec(t)
-				-- domoticz.log('WAKE UP LIGHT timer ' ..i)
+		    for i = 1,65 do
+		        t = i * 2
+				tak.dimTo(i).afterSec(t)
+				domoticz.log('WAKE UP LIGHT timer ' ..i)
 			end
 		    
 	        
@@ -24,7 +21,7 @@ return {
 			domoticz.log("WAKE UP LIGHT ACTIVE")
 		end
 		if (device.state == 'Off') then
-		    licht.switchOff()
+		    tak.switchOff()
 	   	end
 		
 	end
