@@ -1,6 +1,10 @@
 --------------------------------------------
 -- Run enviromental scene every 1 minute   --
 ---------------------------------------------
+--
+-- This is for Storarum
+--
+
 return {
     on = { timer   = { "every 1 minutes" },
            devices = { 3, 5, 71, 76 }
