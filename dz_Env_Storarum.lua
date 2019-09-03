@@ -1,10 +1,13 @@
 --------------------------------------------
 -- Run enviromental scene every 1 minute   --
 ---------------------------------------------
-
 return {
     on = { timer   = { "every 1 minutes" },
-           devices = { 71, 3 }
+           devices = { 3, 5, 71, 76 }
+           --  3 = Virt_Sleep
+           --  5 = Virt_Manuell
+           -- 71 = iDetect Anyone
+           -- 76 = Edlyn Ljus
        },
 
     execute = function(domoticz)
