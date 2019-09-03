@@ -40,7 +40,5 @@ return {
 		if (device.state == 'Off') then
 		domoticz.devices(5).switchOff()
         -- domoticz.log('Morning light off, returning to normal enviroment ')
-	   	end
-		
-	end
-}
+	   	end	
+	end }
