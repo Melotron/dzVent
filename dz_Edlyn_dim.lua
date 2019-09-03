@@ -28,10 +28,10 @@ return {
 		    golv.dimTo(1)
 		    
 		    for i = 1,65 do
-		        t = i * 3
+		        t = i * 2
 				tak.dimTo(i).afterSec(t)
-				-- golv.dimTo(i).afterSec(t)
-				-- domoticz.log('WAKE UP LIGHT timer ' ..i)
+				--- golv.dimTo(i).afterSec(t)
+				--- domoticz.log('WAKE UP LIGHT timer ' ..i)
 			end
 		    
 	        -- domoticz.devices('Lamp bank links').setNightMode()
