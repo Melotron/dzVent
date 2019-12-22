@@ -42,8 +42,8 @@ return {
 			domoticz.devices(25).dimTo(35)                  -- Storarum: Golv
 			domoticz.devices(26).dimTo(35)                  -- Storarum: Tak
 			domoticz.devices(44).switchOff().checkFirst()   -- Storarum: TV MI
-			--domoticz.devices(54).dimTo(50)                  -- Storarum: Sido RGBCCT
-			--domoticz.devices(54).setKelvin(5000)            -- Storarum: Sido RGBCCT
+			domoticz.devices(54).dimTo(10)                  -- Storarum: Sido RGBCCT
+			domoticz.devices(54).setKelvin(5000)            -- Storarum: Sido RGBCCT
 			-- print("Lux mode :Dusk") -- Left from debug
             end end
 			
@@ -58,8 +58,8 @@ return {
 			domoticz.devices(25).dimTo(50)                  -- Storarum: Golv
 			domoticz.devices(26).dimTo(50)                  -- Storarum: Tak
 			domoticz.devices(44).switchOff().checkFirst()   -- Storarum: TV MI
-			--domoticz.devices(54).dimTo(50)                  -- Storarum: Sido RGBCCT
-			--domoticz.devices(54).setKelvin(5000)            -- Storarum: Sido RGBCCT
+			domoticz.devices(54).dimTo(30)                  -- Storarum: Sido RGBCCT
+			domoticz.devices(54).setKelvin(5000)            -- Storarum: Sido RGBCCT
 			-- print("Lux mode :Dusk") -- Left from debug
             end end
 			
@@ -74,8 +74,8 @@ return {
 			domoticz.devices(25).dimTo(66)                  -- Storarum: Golv
 			domoticz.devices(26).dimTo(66)                  -- Storarum: Tak
 			domoticz.devices(44).switchOff().checkFirst()   -- Storarum: TV MI
-			--domoticz.devices(54).dimTo(50)                  -- Storarum: Sido RGBCCT
-			--domoticz.devices(54).setKelvin(5000)            -- Storarum: Sido RGBCCT
+			domoticz.devices(54).dimTo(50)                  -- Storarum: Sido RGBCCT
+			domoticz.devices(54).setKelvin(5000)            -- Storarum: Sido RGBCCT
 			-- print("Lux mode :Dark")   -- Left from debug
             end end 
 		
