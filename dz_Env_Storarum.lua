@@ -10,7 +10,7 @@ return {
            devices = { 3, 5, 65, 76 }
            --  3 = Virt_Sleep
            --  5 = Virt_Manuell
-           -- 71 = iDetect Anyone
+           -- 65 = iDetect Anyone
            -- 76 = Edlyn Ljus
        },
 
