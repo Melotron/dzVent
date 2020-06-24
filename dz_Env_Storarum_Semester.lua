@@ -7,9 +7,7 @@
 
 
 
-return {
-    on = { devices = { 62, 63 } 
-         },
+return { on = { devices = { 62, 63 }  },
 
     execute = function(domoticz)
 
