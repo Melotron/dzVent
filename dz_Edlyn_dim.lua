@@ -20,7 +20,7 @@ return {
 	
 	execute = function(domoticz, device)
 	local tak = domoticz.devices(26)       -- Sets the string for tak lampan
-	local golv = domoticz.devices(25)      -- Sets the string for golv lampan
+	local golv = domoticz.devices(103)      -- Sets the string for golv lampan
 	local hall = domoticz.devices(43)      -- Sets the string for hall
 	local kok = domoticz.devices(42)       -- Sets the string for kök
 		
@@ -48,7 +48,7 @@ return {
 		    
 		        for i = 1,45 do
 		            t = i * 2
-				        tak.dimTo(i).afterSec(t)
+				    tak.dimTo(i).afterSec(t)
 					hall.dimTo(i).afterSec(t)
 					kok.dimTo(i).afterSec(t)
 				    -- golv.dimTo(i).afterSec(t)
@@ -61,20 +61,20 @@ return {
 				  
 	           domoticz.devices(5).switchOn()     -- Turns on the manual light, so my Env scripts dont change the light.
 	           domoticz.devices(3).switchOff()    -- Turns off the Sleep switch.
-		       domoticz.devices(43).dimTo(60)     -- Dim Hall
-		       domoticz.devices(42).dimTo(100)    -- Dim Kök
-		       tak.switchOn()
-		       tak.dimTo(1)
-		       golv.switchOn()
-		       golv.dimTo(1)
-		       hall.switchOn()
-		       hall.dimTo(1)
-		       kok.switchOn()
-		       kok.dimTo(100)
+	           domoticz.devices(43).dimTo(60)     -- Dim Hall
+	           domoticz.devices(42).dimTo(100)    -- Dim Kök
+	           tak.switchOn()
+	           tak.dimTo(1)
+	           golv.switchOn()
+	           golv.dimTo(1)
+	           hall.switchOn()
+	           hall.dimTo(1)
+	           kok.switchOn()
+	           kok.dimTo(100)
 		    
 		        for i = 1,65 do
 		            t = i * 2
-				        tak.dimTo(i).afterSec(t)
+				    tak.dimTo(i).afterSec(t)
 					hall.dimTo(i).afterSec(t)
 					kok.dimTo(i).afterSec(t)
 				    -- golv.dimTo(i).afterSec(t)
