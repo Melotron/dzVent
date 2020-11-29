@@ -37,9 +37,9 @@ return
             end
         end
 
-        dz.log('iDetect is ' .. tostring(iDetect),dz.LOG_DEBUG)
-        dz.log('hemmifran is ' .. tostring(hemmifran),dz.LOG_DEBUG)
-        dz.log('lux is     ' .. tostring(lux),dz.LOG_DEBUG)
+        dz.log('Sov_iDetect is ' .. tostring(iDetect),dz.LOG_DEBUG)
+        dz.log('Sov_hemmifran is ' .. tostring(hemmifran),dz.LOG_DEBUG)
+        dz.log('Sov_lux is     ' .. tostring(lux),dz.LOG_DEBUG)
 
         if hemifran then
             switch('Off', nil, 42, 43)
